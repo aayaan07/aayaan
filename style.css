@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Poppins: "Poppins", sans-serif;
+
+    --shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.05);
+
+    --white: white;
+    --light-white: rgb(238, 238, 238);
+    --light-gray: rgb(205, 205, 205);
+
+    --transition: ease-in-out 250ms;
+}
+
+#box {
+    background-color: #564db90f;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    border: 2px solid #1b3d4b;
+    box-shadow: var(--shadow);
+}
+
+*[data-hover-effect="tilt3d"] {
+    --rX: 0deg;
+    --rY: 0deg;
+    transform: rotateX(var(--rX)) rotateY(var(--rY));
+    transition: 0.2s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url("./assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Poppins);
+}
+
+.container {
+    /* background-color: red; */
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+.container .profileSec {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileSec .profileBox {
+    width: 95%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileBox .header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 2px solid whitesmoke;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.header img:hover {
+    transform: scale(1.05);
+}
+
+.header .greet {
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.header b.name {
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+    margin: 5px 0;
+    text-align: center;
+    max-width: 90%;
+}
+
+.header .profession {
+    color: var(--light-white);
+    font-weight: 500;
+    text-align: center;
+}
+
+.profileBox .about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.about text {
+    color: var(--light-white);
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 80%;
+    text-align: center;
+}
+
+.profileBox .footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.footer img:hover {
+    opacity: 0.7;
+    filter: drop-shadow(var(--shadow));
+}
+
+
+
+
+
+
+
+
+
+.container .otherSec {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.otherSec .iconsSec {
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsSec .iconsBox {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.iconsBox .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.icon img {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+
+
+.otherSec .skillsSec {
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsSec .skillsBox {
+    width: 95%;
+    height: 95%;
+    display: flex;
+}
+
+.skillsBox .skillsTextSec {
+    height: fit-content;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 50px 0 10px 15px;
+    gap: 6px;
+}
+
+.skillsTextSec b {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.skillsTextSec text {
+    color: var(--light-white);
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 90%;
+    text-align: left;
+}
+
+.skillsBox .skills {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.skills .skill {
+    width: 300px;
+    height: 175px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 35px 10px 10px 10px;
+    align-content: flex-start;
+}
+
+.skill b {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: var(--light-white);
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.skill skill {
+    color: var(--light-gray);
+
+    background-color: #564db90f;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    border: 2px solid #a322b43c;
+    box-shadow: var(--shadow);
+
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+.otherSec .worksSec {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(17, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.worksSec .worksBox {
+    width: 95%;
+    height: 98%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.worksSec .worksBox::-webkit-scrollbar {
+    display: none;
+}
+
+.worksBox h3 {
+    position: absolute;
+    top: -24px;
+    left: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.worksBox .worksCon {
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.work {
+    width: 200px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* gap: 8px; */
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.work img {
+    width: 180px;
+    height: 110px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgb(37, 69, 145);
+    margin: 8px 0;
+}
+
+.work b {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    max-width: 90%;
+    margin-bottom: 3px;
+}
+
+.work .des {
+    font-size: 14px;
+    color: var(--light-gray);
+    font-weight: 400;
+    text-align: left;
+    max-width: 90%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 75vh;
+    }
+
+    .iconsBox .icon { 
+        width: 70px;
+        height: 70px;
+    }
+
+    .iconsBox .icon:last-child {
+        display: none;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skillsTextSec text {
+        font-size: 13px;
+    }
+
+    .skills .skill {
+        width: 250px;
+        height: 150px;
+    }
+
+    .skill skill {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        height: 65vh;
+    }
+
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header b.name {
+        font-size: 30px;
+    }
+
+    .header .profession {
+        font-size: 13px;
+    }
+
+    .about text {
+        font-size: 14px;
+    }
+
+    .iconsBox .icon { 
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skillsTextSec text {
+        font-size: 12px;
+    }
+
+    .skills .skill {
+        width: 200px;
+        height: 140px;
+        padding-top: 25px;
+    }
+
+    .skill b {
+        font-size: 13px;
+    }
+
+    .skill skill {
+        font-size: 10px;
+    }
+
+    .work {
+        width: 140px;
+        height: 160px;
+    }
+
+    .work img {
+        width: 130px;
+        height: 70px;
+        margin: 5px 0;
+    }
+
+    .work b {
+        font-size: 12px;
+    }
+
+    .work .des {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        height: 60vh;
+    }
+
+    .header .greet {
+        font-size: 10px;
+    }
+
+    .header b.name {
+        font-size: 22px;
+    }
+
+    .header .profession {
+        font-size: 11px;
+    }
+
+    .about text {
+        font-size: 12px;
+    }
+
+    .header .footer {
+        bottom: 10px;
+    }
+
+    .footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .iconsBox .icon:nth-last-child(2) {
+        display: none;
+    }
+
+    .skillsTextSec b {
+        font-size: 18px;
+        top: 5px;
+    }
+
+    .skillsTextSec text {
+        font-size: 10px;
+    }
+
+    .skills .skill {
+        height: 100px;
+        width: 175px;
+    }
+
+
+    .skill skill {
+        padding: 4px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: scroll;
+        height: fit-content;
+    }
+    .container {
+        height: fit-content;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .container .profileSec {
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0;
+    }
+
+    .profileSec .profileBox {
+        /* height: fit-content; */
+        height: 600px;
+    }
+
+    .header img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .header .greet {
+        font-size: 15px;
+    }
+
+    .header b.name {
+        font-size: 36px;
+    }
+
+    .header .profession {
+        font-size: 16px;
+    }
+
+    .about text {
+        font-size: 16px;
+    }
+
+    .container .otherSec {
+        width: 100%;
+        height: fit-content;
+        padding: 0 0 10px 0;
+        gap: 10px;
+    }
+
+    .otherSec .iconsSec {
+        height: fit-content;
+    }
+
+    .iconsSec .iconsBox {
+        height: fit-content;
+        padding: 10px 0;
+        /* width: 90%; */
+    }
+
+    .iconsBox .icon:nth-last-child(2) {
+        display: flex;
+    }
+
+    .otherSec .skillsSec {
+        height: fit-content;
+    }
+
+    .skillsSec .skillsBox {
+        height: fit-content;
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    .skillsBox .skillsTextSec {
+        width: 95%;
+        padding-top: 40px;
+    }
+
+    .skillsTextSec b {
+        font-size: 18px;
+    }
+
+    .skillsTextSec text {
+        font-size: 14px;
+    }
+
+    .skillsBox .skills {
+        margin: auto;
+        width: 95%;
+        margin-top: 15px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .skills .skill {
+        width: 250px;
+        height: fit-content;
+        min-height: 200px;
+        padding-top: 40px;
+    }
+
+    .skill b {
+        font-size: 18px;
+    }
+
+    .skill skill {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .otherSec .worksSec {
+        height: fit-content;
+    }
+
+    .worksSec .worksBox {
+        height: fit-content;
+    }
+
+    .work {
+        width: 200px;
+        height: 225px;
+    }
+
+    .work img {
+        width: 180px;
+        height: 110px;
+        margin: 8px 0;
+    }
+
+    .work b {
+        font-size: 17px;
+    }
+
+    .work .des {
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .profileSec .profileBox {
+        height: 560px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .work {
+        width: 250px;
+        height: 250px;
+    }
+
+    .work img {
+        width: 230px;
+        height: 130px;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .profileSec .profileBox {
+        height: 560px;
+    }
+
+    .header b.name {
+        font-size: 28px;
+    }
+
+    .header .profession {
+        font-size: 13px;
+    }
+
+    .about text {
+        font-size: 14px;
+    }
+
+    .skills .skill {
+        width: 200px;
+        height: fit-content;
+        min-height: 160px;
+        padding-top: 40px;
+    }
+}
+
+
+
+
+
