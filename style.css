@@ -262,7 +262,7 @@ body {
 
 .skills .skill {
     width: 250px;
-    height: 140px;
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
