@@ -239,12 +239,12 @@ body {
     left: 10px;
     color: white;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .skillsTextSec text {
     color: var(--light-white);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     max-width: 90%;
     text-align: left;
@@ -326,7 +326,7 @@ body {
     left: 10px;
     color: white;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .worksBox .worksCon {
